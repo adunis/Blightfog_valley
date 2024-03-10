@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://n8cls6r7osy8"]
+
+[ext_resource type="PackedScene" uid="uid://wy54fvxeg28r" path="res://house.tscn" id="1_odaio"]
+[ext_resource type="Texture2D" uid="uid://d035ermujww3w" path="res://chest2.png" id="2_ekdc2"]
+[ext_resource type="PackedScene" uid="uid://bcloanulnoq5c" path="res://Interactable.tscn" id="3_fve4x"]
+
+[node name="Environment" type="Node2D"]
+
+[node name="House" parent="." instance=ExtResource("1_odaio")]
+position = Vector2(2, 4)
+
+[node name="Chest2" type="Sprite2D" parent="."]
+position = Vector2(80, 328)
+texture = ExtResource("2_ekdc2")
+hframes = 2
+
+[node name="Chest" type="StaticBody2D" parent="Chest2"]
+
+[node name="Interactable" parent="Chest2/Chest" instance=ExtResource("3_fve4x")]

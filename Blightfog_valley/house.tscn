@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://wy54fvxeg28r"]
+
+[ext_resource type="Texture2D" uid="uid://dowgg2yaoqwda" path="res://Screenshot 2024-03-10 044327.png" id="1_iky00"]
+
+[node name="House" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Screenshot2024-03-10044327" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(189, 136)
+texture = ExtResource("1_iky00")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(53, 218, 302, 220, 302, 132, 54, 134)
